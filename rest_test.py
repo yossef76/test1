@@ -2,6 +2,9 @@ from flask import Flask, request
 import json
 app = Flask(__name__)
 
+def credit_card():
+    pass
+
 @app.route("/mivtzaim")
 def mivtzaim():
     miv = {'milk':3.5, 'bread':6}
