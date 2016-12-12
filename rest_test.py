@@ -7,7 +7,9 @@ def mivtzaim():
     miv = {'milk':3.5, 'bread':6}
     return json.dumps(miv)
 
+#this is instead of a database
 prices = {111:3.5, 222:4.6}
+
 @app.route("/price/<int:barcode>")
 def price(barcode):
     return prices[barcode]
